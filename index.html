@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qkit Food</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="Images/qkit-logo-zip-file/png/qkit-favicon-white.png">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper_header">
+            <div class="logo_main">
+                <a href="#" class="logo_main-header">
+                    <img src="Images/qkit-logo-zip-file/png/logo-header.png" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <form action="" class="form_search ">
+                    <input type="text" name="search" placeholder="Search...">
+                    <i class='bx bx-search-alt-2 iconSearch' ></i>
+                </form>
+            </div>
+            <div class="menu_action">
+                <div class="menu_action-item action-1">
+                    <a href="login.html"><img class="menu_user" src="Images/login-icon-sm.webp"></a>
+                </div>
+                <div class="menu_action-item action-2">
+                    <a href="#"><img class="menu_cart" src="Images/shop-icon-sm.webp" alt=""></a>
+                    <div class="amount">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_body">
+            <div class="wrapper_container">
+                <div class="content">
+                    <div class="container_left">
+                        <div class="sidebar">
+                            <div class="sidebar_heading">
+                                <div>
+                                    <img src="Images/qkit-logo-zip-file/png/qkit-favicon-color.png" width="100px" alt="">
+                                </div>
+                                <div class="sidebar_company">
+                                    kit Food
+                                </div>
+                            </div>
+                                <div class="sidebar_items">
+                                    <a href="#">
+                                        <div>
+                                            <i class='bx bx-home-alt'></i><span>Home</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sidebar_items"  id="sub--menu">
+                                    <a href="#" class="arrow_sub">
+                                        <div>
+                                            <i class='bx bx-food-menu' ></i><span>Menu</span>
+                                        </div>
+                                        <div class="sub_arrow">
+                                            <i class='bx bxs-down-arrow'></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="submenu_items">
+                                    <div>   
+                                        <div class="sidebar_items" >
+                                            <a href="">Burger</a>
+                                        </div>
+                                        <div class="sidebar_items" > 
+                                            <a href="">Pizza </a>
+                                        </div>
+                                        <div class="sidebar_items" > 
+                                            <a href="">Bánh mỳ kẹp</a>
+                                        </div>
+                                        <div class="sidebar_items" > 
+                                            <a href="">Gà rán</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar_items">
+                                    <a href="">
+                                        <div><i class='bx bx-heart' ></i><span>Like</span></div>
+                                    </a>
+                                </div>
+                                <div class="sidebar_items">
+                                    <a href="">
+                                        <div><i class='bx bx-bell' ></i><span>Notifications</span></div>
+                                    </a>
+                                </div>
+                                <div class="sidebar_items">
+                                    <a href="">
+                                        <div><i class='bx bx-wallet' ></i><span>Wallets</span></div>
+                                    </a>
+                                </div>
+                                <div class="sidebar_items">
+                                    <a href="">
+                                        <div><i class='bx bxs-contact' ></i><span>Contact</span></div>
+                                    </a>
+                                </div>
+                                <div class="sidebar_items">
+                                    <a href="">
+                                        <div><i class='bx bx-help-circle' ></i><span>Help</span></div>
+                                    </a>
+                                </div>
+                                <div class="sidebar_items">
+                                    <a href="">
+                                        <div><i class='bx bx-cog' ></i><span>Setting</span></div>
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container_right">
+                        <div class="content_right">
+                            <div class="right_slideshow">
+                                <div class="slideshow">
+                                    <div class="list_images">
+                                        <img class="slideshow_img" src="Images/slide1.jpg" alt="">
+                                        <img class="slideshow_img" src="Images/slide2.jpg" alt="">
+                                        <img class="slideshow_img" src="Images/slide3.jpg" alt="">
+                                        <img class="slideshow_img" src="Images/slide4.jpg" alt="">
+                                        <img class="slideshow_img" src="Images/slide5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="btns">
+                                    <div class="btn_left btn"><i class='bx bx-chevron-left' style="font-size: 30px;"></i></div>
+                                    <div class="btn_right btn"><i class='bx bx-chevron-right' style="font-size: 30px;"></i></div>
+                                </div>
+                                <div class="index_images">
+                                    <div class="index_items index_items-0 active"></div>
+                                    <div class="index_items index_items-1"></div>
+                                    <div class="index_items index_items-2"></div>
+                                    <div class="index_items index_items-3"></div>
+                                    <div class="index_items index_items-4"></div>
+                                </div>
+                            </div>
+                            <div class="container_content">
+                                <div class="product_cards">
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (10).jpg" class="product_img" alt="">
+                                            <div class="product_hover">
+                                                <h3>Shrimp Tempura</h3>
+                                                <p>Crispy, golden-brown shrimp delicately coated in a light tempura batter. A delightful appetizer or main dish option for seafood lovers.</p>
+                                            </div>
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Shrimp Tempura</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">
+                                                    <span class="dis_prices">$ 12.20</span>
+                                                    <span class="re_prices">$ 8.49</span>
+                                                </div>
+                                                <div class="order"><button>Add to cart</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_cards">
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (3).jpg" alt="">
+                                            <div class="product_hover">
+                                                <h3>Five-Onion Sandwich</h3>
+                                                <p>A savory sandwich bursting with the flavors of caramelized onions, green onions, red onions, shallots, and chives, sandwiched between freshly baked bread.</p>
+                                            </div>
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Five-Onion Sandwich</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">
+                                                    <span class="dis_prices">$ 10.00</span>
+                                                    <span class="re_prices">$ 6.99</span>
+                                                </div>
+                                                <div class="order"><button>Add to cart</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_cards">
+                                        <div class="content_product">
+                                            <div class="content_product_img">
+                                                <img src="Images/product (2).jpg" alt="">
+                                                <div class="product_hover">
+                                                    <h3>Large Beef Egg Hamburger</h3>
+                                                    <p>A hearty hamburger featuring a juicy beef patty, topped with a fried egg and nestled between two fluffy buns.</p>
+                                                </div>
+                                            </div>
+                                            <div class="content_product_desc">
+                                                <div class="product_name">
+                                                    <h3>Large Beef Egg Hamburger</h3>
+                                                </div>
+                                                <div class="product_actions">
+                                                    <div class="prices">
+                                                        <span class="dis_prices">$ 19.00</span>
+                                                        <span class="re_prices">$ 12.99</span>
+                                                    </div>
+                                                    <div class="order"><button>Add to cart</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="product_cards">
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (5).jpg" alt="">
+                                            <div class="product_hover">
+                                                <h3>Cheese Hot Dog Sausage</h3>
+                                                <p>A delicious hot dog sausage infused with gooey melted cheese, sandwiched in a soft bun.</p>
+                                            </div>
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Cheese Hot Dog Sausage</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">
+                                                    <span class="dis_prices">$ 8.39</span>
+                                                    <span class="re_prices">$ 5.99</span>
+                                                </div>
+                                                <div class="order"><button>Add to cart</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_cards">
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (13).jpg" alt="">
+                                            <div class="product_hover">
+                                                <h3>Donut</h3>
+                                                <p>A sweet and fluffy pastry treat, glazed or filled with various delicious flavors.</p>
+                                            </div>
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Donut</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">
+                                                    <span class="dis_prices">$ 2.19</span>
+                                                    <span class="re_prices">$ 0.99</span>
+                                                </div>
+                                                <div class="order"><button>Add to cart</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_cards">
+                                        <div class="content_product">
+                                            <div class="content_product_img">
+                                                <img src="Images/product (9).jpg" alt="">
+                                                <div class="product_hover">
+                                                    <h3>Supreme Cheese Pizza</h3>
+                                                    <p>A classic cheese pizza topped with a generous amount of mozzarella, cheddar, parmesan, and asiago cheeses, along with flavorful toppings like pepperoni, mushrooms, bell peppers, and onions.</p>
+                                                </div>
+                                            </div>
+                                            <div class="content_product_desc">
+                                                <div class="product_name">
+                                                    <h3>Supreme Cheese Pizza</h3>
+                                                </div>
+                                                <div class="product_actions">
+                                                    <div class="prices">
+                                                        <span class="dis_prices">$ 19.00</span>
+                                                        <span class="re_prices">$ 13.99</span>
+                                                    </div>
+                                                    <div class="order"><button>Add to cart</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- <div class="product_cards">
+                                <div class="content_product">
+                                    <div class="content_product_img">
+                                        <img src="Images/product (4).jpg" alt="">
+                                    </div>
+                                    <div class="content_product_desc">
+                                        <div class="product_name">
+                                            <h3>Hamberger</h3>
+                                        </div>
+                                        <div class="product_actions">
+                                            <div class="prices">500.000đ</div>
+                                            <div class="order"><button>Add to cart</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="product_cards">
+                                        <div class="content_product">
+                                            <div class="content_product_img">
+                                                <img src="Images/product.jpg" alt="">
+                                            </div>
+                                            <div class="content_product_desc">
+                                                <div class="product_name">
+                                                    <h3>Hamberger</h3>
+                                                </div>
+                                                <div class="product_actions">
+                                                    <div class="prices">500.000đ</div>
+                                                    <div class="order"><button>Add to cart</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="product_cards">
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (5).jpg" alt="">
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Hamberger</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">500.000đ</div>
+                                                <div class="order"><button>Add to cart</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_cards">
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (6).jpg" alt="">
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Hamberger</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">500.000đ</div>
+                                                <div class="order"><button>Add to cart</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_cards">
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (7).jpg" alt="">
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Hamberger</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">500.000đ</div>
+                                                <div class="order"><button>Add to cart</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_cards">
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (8).jpg" alt="">
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Hamberger</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">500.000đ</div>
+                                                <div class="order"><button>Add to cart</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_cards">
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (9).jpg" alt="">
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Hamberger</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">500.000đ</div>
+                                                <div class="order"><button>Add to cart</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_cards">
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (10).jpg" alt="">
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Hamberger</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">500.000đ</div>
+                                                <div class="order"><button>Add to cart</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_cards">
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (11).jpg" alt="">
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Hamberger</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">500.000đ</div>
+                                                <div class="order"><button>Add to cart</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                
+                                <div class="marquee">
+                                    <div class="best_selling">
+                                        <div class="best_selling-item">
+                                            Best-selling products
+                                        </div>
+                                    </div>
+                                    <div class="marquee_content">
+                                        <ul class="list_marquee">
+                                            <li><img src="Images/marquee1.webp" alt=""></li>
+                                            <li><img src="Images/marquee4.jpg" alt=""></li>
+                                            <li><img src="Images/marquee5.jpg" alt=""></li>
+                                            <li><img src="Images/marquee6.jpg" alt=""></li>
+                                            <li><img src="Images/marquee7.jpg" alt=""></li>
+                                            <li><img src="Images/marquee8.jpg" alt=""></li>
+                                            <li><img src="Images/marquee9.png" alt=""></li>
+                                            <li><img src="Images/marquee10.png" alt=""></li>
+                                            <li><img src="Images/marquee11.jpg" alt=""></li>
+
+                                            
+                                            <li><img src="Images/marquee1.webp" alt=""></li>
+                                            <li><img src="Images/marquee4.jpg" alt=""></li>
+                                            <li><img src="Images/marquee5.jpg" alt=""></li>
+                                            <li><img src="Images/marquee6.jpg" alt=""></li>
+                                            <li><img src="Images/marquee7.jpg" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="news">
+                                    <div class="news_title">
+                                        <div class="news_heading">
+                                            NEWS
+                                        </div>
+                                        <div class="news_story">
+                                            <div class="news_story-heading">
+                                                NEW STORIES
+                                            </div>
+                                            <div class="news_story-desc">
+                                                Check out more stories at Qkit Food right below
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news_contain">
+                                        <div class="news_body">
+                                            <div class="news_body-items">
+                                                <div class="news_body-img">
+                                                    <img src="Images/news3.webp" alt="">
+                                                </div>
+                                                <div class="news_body-text">
+                                                    <div class="news_body-title">
+                                                        Qkit introduces a brand new kids' menu
+                                                    </div>
+                                                    <div class="news_body-desc">
+                                                        The kids' menu offers great value and quality
+                                                    </div>
+                                                    <div class="news_body-btn">
+                                                        <button>see more</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="news_body-items">
+                                                <div class="news_body-img">
+                                                    <img src="Images/news1.webp" alt="">
+                                                </div>
+                                                <div class="news_body-text">
+                                                    <div class="news_body-title">
+                                                        The late breakfast menu has arrived at Qkit
+                                                    </div>
+                                                    <div class="news_body-desc">
+                                                        Qkit unveils a completely new late breakfast menu. Check out the images for a closer look
+                                                    </div>
+                                                    <div class="news_body-btn">
+                                                        <button>see more</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="news_body-items">
+                                                <div class="news_body-img">
+                                                    <img src="Images/news2.webp" alt="">
+                                                </div>
+                                                <div class="news_body-text">
+                                                    <div class="news_body-title">
+                                                        Fresh is the peak
+                                                    </div>
+                                                    <div class="news_body-desc">
+                                                        Explore to discover how each day begins at Qkit
+                                                    </div>
+                                                    <div class="news_body-btn">
+                                                        <button>see more</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="news_body-items">
+                                                <div class="news_body-img">
+                                                    <img src="Images/news4.jpg" alt="">
+                                                </div>
+                                                <div class="news_body-text">
+                                                    <div class="news_body-title">
+                                                        New store alert! Qkit in Da Nang
+                                                    </div>
+                                                    <div class="news_body-desc">
+                                                        Explore more information and images from Qkit in Da Nang
+                                                    </div>
+                                                    <div class="news_body-btn">
+                                                        <button>see more</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <footer id="footer">
+            <div class="wrapper_footer">
+                <div class="footer_container">
+                    <div class="footer_notification">
+                        <h3 class="footer_heading">SUBSCRIBE TO RECEIVE UPDATES FROM US</h3>
+                        <div class="footer_desc">Get notified about the latest updates once a month.</div>
+                        <div class="footer_form">
+                            <input type="email" placeholder="Your email">
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                    <div class="footer_help">
+                        <h3 class="footer_heading">CUSTOMER SUPPORT</h3>
+                        <div class="footer_desc">
+                            <div class="footer_desc-help">
+                                <ul>
+                                    <li>Hotline: 0934 - 092 - 819</li>
+                                    <li>Frequently Asked Questions</li>
+                                    <li>Submit a Support Request</li>
+                                    <li>Return and Exchange Policy</li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="footer_payment">
+                        <h3 class="footer_heading">PAYMENT METHODS</h3>
+                        <div class="footer_desc">
+                            <div class="payment">
+                                <img src="Images/visaIcon.png" alt=""  width="50px">
+                                <img src="Images/vnpayIcon.webp" alt="" width="50px">
+                                <img src="Images/zalopayIcon.webp" alt="" width="50px">
+                                <img src="Images/momoIcon.webp" alt="" width="50px">
+                                <img src="Images/IconPay.png" alt="" width="50px">
+                                <img src="Images/Iconpay.jpg" alt="" width="50px">
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="footer_contact">
+                        <h3 class="footer_heading">
+                            CONTACT US
+                            <ul>
+                                <li>
+                                    <img src="Images/footerIconfb.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="Images/footerIconins.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="Images/footerIcontt.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="Images/footerIconytb.jpg" alt="">
+                                </li>
+                            </ul>
+                        </h3>
+                        <div class="footer_desc">
+                            Welcome to our official website in Vietnam. Visit our social media pages for more exciting updates.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <div class="copyright">
+                    &copy; 2024 Qkit Food - 
+                    Developed by Tran Qui Kiet
+                </div>
+                <div class="info">
+                    Student ID: DH52101039 - Class: D21_TH03
+                </div>
+            </div>
+        </footer>
+        </div>
+    </div>
+    <div class="social">
+        <div class="icon"><a target="_blank" href="https://www.facebook.com/profile.php?id=100007592056563&locale=vi_VN"><img src="Images/fbicon.webp" alt=""></a></div>
+        <div class="icon"><a target="_blank" href="https://www.instagram.com/quikiett/"><img src="Images/insicon.webp" alt=""></a></div>
+        <div class="icon"><a target="_blank" href="https://www.tiktok.com/@quikietttttttt"><img src="Images/tiktokicon.png" alt=""></a></div>
+        <div class="icon"><a target="_blank" href="https://chat.zalo.me"><img src="Images/zaloicon.png" alt=""></a></div>
+    </div>
+    <script src="Scripts/scripts.js"></script>
+</body>
+</html>
