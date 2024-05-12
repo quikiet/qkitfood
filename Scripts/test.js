@@ -1,6 +1,3 @@
-
-// menubar Responsive
-
 function open_menu(){
     document.getElementById('sidebar_container').style.display="block";
     document.getElementById('sidebar_container').style.opacity="1";
@@ -17,7 +14,7 @@ function open_close(){
     document.getElementById('menu_cl').style.visibility="hidden";
 };
     
-// jquery submenu Toggle
+
 
 $(document).ready(function(){
 $('.arrow_sub').click(function(){
@@ -26,23 +23,6 @@ $('.arrow_sub').click(function(){
 });
 });
 
-
-// // click submenu
-// document.getElementById("sub--menu").addEventListener("click", function(){
-//     var submenu_i = document.querySelector(".submenu_items");
-//     if(submenu_i){
-//         if(window.getComputedStyle(submenu_i).display === "none")
-//         {
-//             submenu_i.style.display = "block";
-//             submenu_i.style.width = "85%";
-//         }
-//         else
-//         {
-//             submenu_i.style.display = "none";
-//             submenu_i.style.width = "0%";
-//         }
-//     }
-// });
 
 // slide show
 

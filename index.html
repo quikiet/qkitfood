@@ -5,30 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qkit Food</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="Images/qkit-logo-zip-file/png/qkit-favicon-white.png">
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/index1.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="wrapper_header">
-            <div class="logo_main">
-                <a href="#" class="logo_main-header">
-                    <img src="Images/qkit-logo-zip-file/png/logo-header.png" alt="">
-                </a>
-            </div>
-            <div class="search">
-                <form action="" class="form_search ">
-                    <input type="text" name="search" placeholder="Search...">
-                    <i class='bx bx-search-alt-2 iconSearch' ></i>
-                </form>
-            </div>
-            <div class="menu_action">
-                <div class="menu_action-item action-1">
-                    <a href="login.html"><img class="menu_user" src="Images/login-icon-sm.webp"></a>
+            <div class="header_contain">
+                <div class="logo_main">
+                    <a href="#" class="logo_main-header">
+                        <img src="Images/qkit-logo-zip-file/png/logo-header.png" alt="">
+                    </a>
                 </div>
-                <div class="menu_action-item action-2">
-                    <a href="#"><img class="menu_cart" src="Images/shop-icon-sm.webp" alt=""></a>
-                    <div class="amount">0</div>
+                <div class="search">
+                    <form action="" class="form_search ">
+                        <input type="text" name="search" placeholder="Search...">
+                        <i class='bx bx-search-alt-2 iconSearch' ></i>
+                    </form>
+                </div>
+                <div class="menu_action">
+                    <div class="menu_action-item action-1">
+                        <a href="login.html"><img class="menu_user" src="Images/login-icon-sm.webp"></a>
+                    </div>
+                    <div class="menu_action-item action-2">
+                        <a href="#"><img class="menu_cart" src="Images/shop-icon-sm.webp" alt=""></a>
+                        <div class="amount">0</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,78 +43,89 @@
                 <div class="content">
                     <div class="container_left">
                         <div class="sidebar">
-                            <div class="sidebar_heading">
-                                <div>
+                            <div class="sidebar_content">
+                                <div class="sidebar_heading">
                                     <img src="Images/qkit-logo-zip-file/png/qkit-favicon-color.png" width="100px" alt="">
+                                    <div class="sidebar_company">
+                                        kit Food
+                                    </div>
+                                    <div class="sidebar_menu" >
+                                        <button id="menu_mn" onclick="open_menu()">
+                                            <i class='bx bx-menu'></i>
+                                        </button>
+                                        <button id="menu_cl" onclick="open_close()">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+                                    </div>
+    
                                 </div>
-                                <div class="sidebar_company">
-                                    kit Food
-                                </div>
-                            </div>
-                                <div class="sidebar_items">
-                                    <a href="#">
-                                        <div>
-                                            <i class='bx bx-home-alt'></i><span>Home</span>
+                                <div id="sidebar_container">
+                                    <div class="sidebar_items">
+                                        <a href="#">
+                                            <div class="sidebar_res">
+                                                <i class='bx bx-home-alt'></i><span>Home</span>
+                                            </div>
+                                        </a>
+    
+                                    </div>
+                                    <div class="sidebar_items"  id="sub--menu">
+                                        <a href="#" class="arrow_sub" >
+                                            <div class="">
+                                                <div class="sidebar_res">
+                                                    <i class='bx bx-food-menu' ></i><span>Menu</span>
+                                                </div>
+                                                <div class="sub_arrow">
+                                                    <i class='bx bxs-down-arrow'></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="submenu">
+                                            <div class="submenu_items">
+                                                <a href="">Burger</a>
+                                            </div>
+                                            <div class="submenu_items"> 
+                                                <a href="">Pizza </a>
+                                            </div>
+                                            <div class="submenu_items"> 
+                                                <a href="">Bánh mỳ kẹp</a>
+                                            </div>
+                                            <div class="submenu_items"> 
+                                                <a href="">Gà rán</a>
+                                            </div>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="sidebar_items"  id="sub--menu">
-                                    <a href="#" class="arrow_sub">
-                                        <div>
-                                            <i class='bx bx-food-menu' ></i><span>Menu</span>
-                                        </div>
-                                        <div class="sub_arrow">
-                                            <i class='bx bxs-down-arrow'></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="submenu_items">
-                                    <div>   
-                                        <div class="sidebar_items" >
-                                            <a href="">Burger</a>
-                                        </div>
-                                        <div class="sidebar_items" > 
-                                            <a href="">Pizza </a>
-                                        </div>
-                                        <div class="sidebar_items" > 
-                                            <a href="">Bánh mỳ kẹp</a>
-                                        </div>
-                                        <div class="sidebar_items" > 
-                                            <a href="">Gà rán</a>
-                                        </div>
+                                    </div>                              
+                                    <div class="sidebar_items">
+                                        <a href="#">
+                                            <div class="sidebar_res"><i class='bx bx-heart' ></i><span>Like</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="sidebar_items">
+                                        <a href="#">
+                                            <div class="sidebar_res"><i class='bx bx-bell' ></i><span>Notifications</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="sidebar_items">
+                                        <a href="#">
+                                            <div class="sidebar_res"><i class='bx bx-wallet' ></i><span>Wallets</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="sidebar_items">
+                                        <a href="#">
+                                            <div class="sidebar_res"><i class='bx bxs-contact' ></i><span>Contact</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="sidebar_items">
+                                        <a href="#">
+                                            <div class="sidebar_res"><i class='bx bx-help-circle' ></i><span>Help</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="sidebar_items">
+                                        <a href="#">
+                                            <div class="sidebar_res"><i class='bx bx-cog' ></i><span>Setting</span></div>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="sidebar_items">
-                                    <a href="">
-                                        <div><i class='bx bx-heart' ></i><span>Like</span></div>
-                                    </a>
-                                </div>
-                                <div class="sidebar_items">
-                                    <a href="">
-                                        <div><i class='bx bx-bell' ></i><span>Notifications</span></div>
-                                    </a>
-                                </div>
-                                <div class="sidebar_items">
-                                    <a href="">
-                                        <div><i class='bx bx-wallet' ></i><span>Wallets</span></div>
-                                    </a>
-                                </div>
-                                <div class="sidebar_items">
-                                    <a href="">
-                                        <div><i class='bx bxs-contact' ></i><span>Contact</span></div>
-                                    </a>
-                                </div>
-                                <div class="sidebar_items">
-                                    <a href="">
-                                        <div><i class='bx bx-help-circle' ></i><span>Help</span></div>
-                                    </a>
-                                </div>
-                                <div class="sidebar_items">
-                                    <a href="">
-                                        <div><i class='bx bx-cog' ></i><span>Setting</span></div>
-                                    </a>
-                                </div>
-                            </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="container_right">
@@ -162,20 +179,20 @@
                                 <div class="product_cards">
                                     <div class="content_product">
                                         <div class="content_product_img">
-                                            <img src="Images/product (3).jpg" alt="">
+                                            <img src="Images/product (10).jpg" class="product_img" alt="">
                                             <div class="product_hover">
-                                                <h3>Five-Onion Sandwich</h3>
-                                                <p>A savory sandwich bursting with the flavors of caramelized onions, green onions, red onions, shallots, and chives, sandwiched between freshly baked bread.</p>
+                                                <h3>Shrimp Tempura</h3>
+                                                <p>Crispy, golden-brown shrimp delicately coated in a light tempura batter. A delightful appetizer or main dish option for seafood lovers.</p>
                                             </div>
                                         </div>
                                         <div class="content_product_desc">
                                             <div class="product_name">
-                                                <h3>Five-Onion Sandwich</h3>
+                                                <h3>Shrimp Tempura</h3>
                                             </div>
                                             <div class="product_actions">
                                                 <div class="prices">
-                                                    <span class="dis_prices">$ 10.00</span>
-                                                    <span class="re_prices">$ 6.99</span>
+                                                    <span class="dis_prices">$ 12.20</span>
+                                                    <span class="re_prices">$ 8.49</span>
                                                 </div>
                                                 <div class="order"><button>Add to cart</button></div>
                                             </div>
@@ -183,45 +200,22 @@
                                     </div>
                                 </div>
                                 <div class="product_cards">
-                                        <div class="content_product">
-                                            <div class="content_product_img">
-                                                <img src="Images/product (2).jpg" alt="">
-                                                <div class="product_hover">
-                                                    <h3>Large Beef Egg Hamburger</h3>
-                                                    <p>A hearty hamburger featuring a juicy beef patty, topped with a fried egg and nestled between two fluffy buns.</p>
-                                                </div>
-                                            </div>
-                                            <div class="content_product_desc">
-                                                <div class="product_name">
-                                                    <h3>Large Beef Egg Hamburger</h3>
-                                                </div>
-                                                <div class="product_actions">
-                                                    <div class="prices">
-                                                        <span class="dis_prices">$ 19.00</span>
-                                                        <span class="re_prices">$ 12.99</span>
-                                                    </div>
-                                                    <div class="order"><button>Add to cart</button></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="product_cards">
                                     <div class="content_product">
                                         <div class="content_product_img">
-                                            <img src="Images/product (5).jpg" alt="">
+                                            <img src="Images/product (10).jpg" class="product_img" alt="">
                                             <div class="product_hover">
-                                                <h3>Cheese Hot Dog Sausage</h3>
-                                                <p>A delicious hot dog sausage infused with gooey melted cheese, sandwiched in a soft bun.</p>
+                                                <h3>Shrimp Tempura</h3>
+                                                <p>Crispy, golden-brown shrimp delicately coated in a light tempura batter. A delightful appetizer or main dish option for seafood lovers.</p>
                                             </div>
                                         </div>
                                         <div class="content_product_desc">
                                             <div class="product_name">
-                                                <h3>Cheese Hot Dog Sausage</h3>
+                                                <h3>Shrimp Tempura</h3>
                                             </div>
                                             <div class="product_actions">
                                                 <div class="prices">
-                                                    <span class="dis_prices">$ 8.39</span>
-                                                    <span class="re_prices">$ 5.99</span>
+                                                    <span class="dis_prices">$ 12.20</span>
+                                                    <span class="re_prices">$ 8.49</span>
                                                 </div>
                                                 <div class="order"><button>Add to cart</button></div>
                                             </div>
@@ -231,20 +225,20 @@
                                 <div class="product_cards">
                                     <div class="content_product">
                                         <div class="content_product_img">
-                                            <img src="Images/product (13).jpg" alt="">
+                                            <img src="Images/product (10).jpg" class="product_img" alt="">
                                             <div class="product_hover">
-                                                <h3>Donut</h3>
-                                                <p>A sweet and fluffy pastry treat, glazed or filled with various delicious flavors.</p>
+                                                <h3>Shrimp Tempura</h3>
+                                                <p>Crispy, golden-brown shrimp delicately coated in a light tempura batter. A delightful appetizer or main dish option for seafood lovers.</p>
                                             </div>
                                         </div>
                                         <div class="content_product_desc">
                                             <div class="product_name">
-                                                <h3>Donut</h3>
+                                                <h3>Shrimp Tempura</h3>
                                             </div>
                                             <div class="product_actions">
                                                 <div class="prices">
-                                                    <span class="dis_prices">$ 2.19</span>
-                                                    <span class="re_prices">$ 0.99</span>
+                                                    <span class="dis_prices">$ 12.20</span>
+                                                    <span class="re_prices">$ 8.49</span>
                                                 </div>
                                                 <div class="order"><button>Add to cart</button></div>
                                             </div>
@@ -252,172 +246,51 @@
                                     </div>
                                 </div>
                                 <div class="product_cards">
-                                        <div class="content_product">
-                                            <div class="content_product_img">
-                                                <img src="Images/product (9).jpg" alt="">
-                                                <div class="product_hover">
-                                                    <h3>Supreme Cheese Pizza</h3>
-                                                    <p>A classic cheese pizza topped with a generous amount of mozzarella, cheddar, parmesan, and asiago cheeses, along with flavorful toppings like pepperoni, mushrooms, bell peppers, and onions.</p>
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (10).jpg" class="product_img" alt="">
+                                            <div class="product_hover">
+                                                <h3>Shrimp Tempura</h3>
+                                                <p>Crispy, golden-brown shrimp delicately coated in a light tempura batter. A delightful appetizer or main dish option for seafood lovers.</p>
+                                            </div>
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Shrimp Tempura</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">
+                                                    <span class="dis_prices">$ 12.20</span>
+                                                    <span class="re_prices">$ 8.49</span>
                                                 </div>
+                                                <div class="order"><button>Add to cart</button></div>
                                             </div>
-                                            <div class="content_product_desc">
-                                                <div class="product_name">
-                                                    <h3>Supreme Cheese Pizza</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_cards">
+                                    <div class="content_product">
+                                        <div class="content_product_img">
+                                            <img src="Images/product (10).jpg" class="product_img" alt="">
+                                            <div class="product_hover">
+                                                <h3>Shrimp Tempura</h3>
+                                                <p>Crispy, golden-brown shrimp delicately coated in a light tempura batter. A delightful appetizer or main dish option for seafood lovers.</p>
+                                            </div>
+                                        </div>
+                                        <div class="content_product_desc">
+                                            <div class="product_name">
+                                                <h3>Shrimp Tempura</h3>
+                                            </div>
+                                            <div class="product_actions">
+                                                <div class="prices">
+                                                    <span class="dis_prices">$ 12.20</span>
+                                                    <span class="re_prices">$ 8.49</span>
                                                 </div>
-                                                <div class="product_actions">
-                                                    <div class="prices">
-                                                        <span class="dis_prices">$ 19.00</span>
-                                                        <span class="re_prices">$ 13.99</span>
-                                                    </div>
-                                                    <div class="order"><button>Add to cart</button></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                                <!-- <div class="product_cards">
-                                <div class="content_product">
-                                    <div class="content_product_img">
-                                        <img src="Images/product (4).jpg" alt="">
-                                    </div>
-                                    <div class="content_product_desc">
-                                        <div class="product_name">
-                                            <h3>Hamberger</h3>
-                                        </div>
-                                        <div class="product_actions">
-                                            <div class="prices">500.000đ</div>
-                                            <div class="order"><button>Add to cart</button></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="product_cards">
-                                        <div class="content_product">
-                                            <div class="content_product_img">
-                                                <img src="Images/product.jpg" alt="">
-                                            </div>
-                                            <div class="content_product_desc">
-                                                <div class="product_name">
-                                                    <h3>Hamberger</h3>
-                                                </div>
-                                                <div class="product_actions">
-                                                    <div class="prices">500.000đ</div>
-                                                    <div class="order"><button>Add to cart</button></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="product_cards">
-                                    <div class="content_product">
-                                        <div class="content_product_img">
-                                            <img src="Images/product (5).jpg" alt="">
-                                        </div>
-                                        <div class="content_product_desc">
-                                            <div class="product_name">
-                                                <h3>Hamberger</h3>
-                                            </div>
-                                            <div class="product_actions">
-                                                <div class="prices">500.000đ</div>
                                                 <div class="order"><button>Add to cart</button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product_cards">
-                                    <div class="content_product">
-                                        <div class="content_product_img">
-                                            <img src="Images/product (6).jpg" alt="">
-                                        </div>
-                                        <div class="content_product_desc">
-                                            <div class="product_name">
-                                                <h3>Hamberger</h3>
-                                            </div>
-                                            <div class="product_actions">
-                                                <div class="prices">500.000đ</div>
-                                                <div class="order"><button>Add to cart</button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_cards">
-                                    <div class="content_product">
-                                        <div class="content_product_img">
-                                            <img src="Images/product (7).jpg" alt="">
-                                        </div>
-                                        <div class="content_product_desc">
-                                            <div class="product_name">
-                                                <h3>Hamberger</h3>
-                                            </div>
-                                            <div class="product_actions">
-                                                <div class="prices">500.000đ</div>
-                                                <div class="order"><button>Add to cart</button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_cards">
-                                    <div class="content_product">
-                                        <div class="content_product_img">
-                                            <img src="Images/product (8).jpg" alt="">
-                                        </div>
-                                        <div class="content_product_desc">
-                                            <div class="product_name">
-                                                <h3>Hamberger</h3>
-                                            </div>
-                                            <div class="product_actions">
-                                                <div class="prices">500.000đ</div>
-                                                <div class="order"><button>Add to cart</button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_cards">
-                                    <div class="content_product">
-                                        <div class="content_product_img">
-                                            <img src="Images/product (9).jpg" alt="">
-                                        </div>
-                                        <div class="content_product_desc">
-                                            <div class="product_name">
-                                                <h3>Hamberger</h3>
-                                            </div>
-                                            <div class="product_actions">
-                                                <div class="prices">500.000đ</div>
-                                                <div class="order"><button>Add to cart</button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_cards">
-                                    <div class="content_product">
-                                        <div class="content_product_img">
-                                            <img src="Images/product (10).jpg" alt="">
-                                        </div>
-                                        <div class="content_product_desc">
-                                            <div class="product_name">
-                                                <h3>Hamberger</h3>
-                                            </div>
-                                            <div class="product_actions">
-                                                <div class="prices">500.000đ</div>
-                                                <div class="order"><button>Add to cart</button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_cards">
-                                    <div class="content_product">
-                                        <div class="content_product_img">
-                                            <img src="Images/product (11).jpg" alt="">
-                                        </div>
-                                        <div class="content_product_desc">
-                                            <div class="product_name">
-                                                <h3>Hamberger</h3>
-                                            </div>
-                                            <div class="product_actions">
-                                                <div class="prices">500.000đ</div>
-                                                <div class="order"><button>Add to cart</button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
                                 
                                 <div class="marquee">
                                     <div class="best_selling">
@@ -611,12 +484,7 @@
         </footer>
         </div>
     </div>
-    <div class="social">
-        <div class="icon"><a target="_blank" href="https://www.facebook.com/profile.php?id=100007592056563&locale=vi_VN"><img src="Images/fbicon.webp" alt=""></a></div>
-        <div class="icon"><a target="_blank" href="https://www.instagram.com/quikiett/"><img src="Images/insicon.webp" alt=""></a></div>
-        <div class="icon"><a target="_blank" href="https://www.tiktok.com/@quikietttttttt"><img src="Images/tiktokicon.png" alt=""></a></div>
-        <div class="icon"><a target="_blank" href="https://chat.zalo.me"><img src="Images/zaloicon.png" alt=""></a></div>
-    </div>
-    <script src="Scripts/scripts.js"></script>
+
+    <script src="Scripts/test.js"></script>
 </body>
 </html>
