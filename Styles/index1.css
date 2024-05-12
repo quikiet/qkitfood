@@ -16,8 +16,10 @@
     width: 100%;
 }
 
+
 .wrapper_body{
     display: block;
+
 }
 
 /* css menu */
@@ -35,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    max-width: 1540px;
+    max-width: 1440px;
     align-items: center;
 }
 
@@ -146,10 +148,9 @@
 }
 
 .wrapper_container{
-
     margin: 0 auto;
     width: 100%;
-    max-width: 1540px;
+    max-width: 1440px;
 }
 
 .content{
@@ -196,6 +197,12 @@
     color: #DEDAD7;
     font-size: 2rem;
     font-family: "DM Mono", monospace;
+    font-weight: 900;
+    background: url(/Images/bg1.png);    
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sidebar_menu{
@@ -284,6 +291,7 @@
 
 .container_right {
     width: calc(100% - 250px); 
+    background-color: #FEE1D4;
     margin: 0 auto;
 }
 
@@ -903,6 +911,12 @@
 /* Media query cho máy tính bảng */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
 
+    .wrapper_container{
+        margin: 0;
+        width: 100%;
+    }
+
+
     /* css header */
 
     .logo_main {
@@ -1409,6 +1423,20 @@
         width: 100%;
         margin: 0 auto;
         margin-top: 100px;
+    }
+
+    /* css slideshow */
+
+    .right_slideshow{
+        max-height: 100%;
+    }
+
+    .list_images{
+        max-height: 500px;
+    }
+
+    .right_slideshow:hover .btn{
+        display: none;
     }
 
     /* css list product */
