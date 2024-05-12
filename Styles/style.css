@@ -162,8 +162,8 @@
 .sidebar{
     background-color: #222123;
     padding-bottom: 20px;
-    /* position: sticky;
-    top:10px; */
+    position: sticky;
+    top:10px;
 }
 
 .sidebar_heading{
