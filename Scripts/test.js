@@ -78,3 +78,23 @@ btnLeft.addEventListener("click", function(){
         document.querySelector('.index_items-' + current).classList.add('active');
     }
 })
+
+
+// see more
+
+document.getElementById('seeMoreButton').addEventListener('click', function(){
+    let seeMoreElement = document.querySelectorAll('.seemore');
+    seeMoreElement.forEach(element => {
+        if(element.style.display === 'none')
+        {
+            element.style.display = 'block';
+            document.getElementById('seeMoreButton').textContent = 'Ẩn bớt';
+        }
+        else
+        {
+            element.style.display = 'none';
+            document.getElementById('seeMoreButton').textContent = 'Xem thêm';
+        }
+    });
+
+});
