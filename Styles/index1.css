@@ -203,11 +203,11 @@ body{
     font-size: 2rem;
     font-family: "DM Mono", monospace;
     font-weight: 900;
-    background: url(/Images/bg1.png);    
+    /* background: url(/Images/bg1.png);    
     background-size: contain;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
 .sidebar_menu{
@@ -393,7 +393,6 @@ body{
     justify-content: space-between;
     width: 100%;
 }
-
 .product_cards{
     position: relative;
     width: calc(100%/3);
@@ -631,7 +630,7 @@ body{
 
 .news_title{
     position: relative;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .news_heading{
@@ -916,9 +915,14 @@ body{
 /* Media query cho máy tính bảng */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
 
-    .wrapper_container{
-        margin: 0;
+    .wrapper_container {
+        margin: 0 auto;
         width: 100%;
+        max-width: none;
+    }
+
+    .header_contain{
+        max-width: none;
     }
 
 
@@ -930,7 +934,7 @@ body{
     }
 
     .form_search input{
-        max-width: 250px;
+        max-width: 450px;
     }
 
     .menu_action{
@@ -997,6 +1001,7 @@ body{
     }
 
     .sidebar_items span{
+        font-size: 25px;
         padding: 0;
     }
 
@@ -1036,7 +1041,7 @@ body{
 
     .product_cards{
         position: relative;
-        width: calc(100%/3);
+        width: calc(100%/2);
         display: inline-block;
         box-sizing: border-box;
         padding: 20px 20px 0 20px;
@@ -1050,7 +1055,7 @@ body{
 
     .product_name h3{
         font-weight: 700;
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .product_actions{
@@ -1060,7 +1065,7 @@ body{
 
     .prices , .dis_prices, .re_prices{
         font-weight: 800;
-        font-size: 20px;
+        font-size: 25px;
         text-align: center;
         justify-content: center;
         color: #A50C15;    
@@ -1072,9 +1077,9 @@ body{
     }
 
     .order button{
-        padding: 8px 12px;
+        padding: 16px 12px;
         line-height: 20px;
-        font-size: 12px;
+        font-size: 18px;
         font-weight: 700;
         background-color: #ffffff;
         border: 1px solid #1DAA9F;
@@ -1109,17 +1114,24 @@ body{
         margin: 0;
     }
 
+    
+    .news_body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .news_body-items{
-        width: 100%;
-        height: 100%;
+        width: 50%;
+        height: 50%;
         display: flex;
         flex-direction: column;
-        padding: 15px;
+        padding: 25px;
+        margin-bottom: 0;
     }
 
     .news_body-img{
         width: 100%;
-        height: 60%;
+        height: 65%;
     }
 
     .news_body-img img{
@@ -1135,7 +1147,12 @@ body{
         display: block;
         overflow: auto;
         width: 100%;
-        height: 100%;
+        height: 35%;
+        font-size: 20px;
+    }
+
+    .news_body-desc{
+        font-size: 25px;
     }
 
     .news_body-title{
@@ -1143,12 +1160,14 @@ body{
         font-weight: 500;
     }
 
+    .news_body-btn button {
+        font-size: 20px;
+    }
+
     .news_body-btn button:hover{
         transition: 0.3s;
         background-color: #DEDAD7;
     }
-
-    
 
     /* css footer */
 
@@ -1321,7 +1340,11 @@ body{
 
 /* Media query cho điện thoại thông minh */
 @media only screen and (max-width: 480px) {
-    
+
+    .wrapper{
+        min-width: 0;
+    }
+
     /* css header */
 
     .wrapper_header{
@@ -1472,14 +1495,23 @@ body{
     .content_product_img:hover .product_hover{
         height: 80px;
     }
+        
+    .content_product_img:hover .product_hover{
+        cursor: none;
+        transform: none;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .product_hover{
+        visibility: hidden;
+        opacity: 0;
+    }
 
     .product_actions {
         display: block;
         flex-direction: column;
-    }
-
-    .product_hover{
-        margin-right: 10px;
     }
 
     .product_name{
@@ -1550,7 +1582,6 @@ body{
 
     .news_title{
         position: relative;
-        margin: 0;
     }
 
     .news_heading{
