@@ -213,13 +213,15 @@
     display: block;
     width: 100px;
     height: 100%;
-    box-shadow: 4px 2px 2px #999;
 }
 
 .other img{
     height: 100%;
     width: 100px;
     object-fit: cover;
+    opacity: 0.8;
+    transform: scale(0.9);
+    border: none;
 }
 
 .detail_right{

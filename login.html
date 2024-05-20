@@ -33,20 +33,22 @@
                         <div class="login-container">
                             <form action="">
                                 <div>
-                                    <input class="signInUser" type="text" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                                    <input class="signInUser" id="sdtInput" type="text" placeholder="Số điện thoại">
+                                    <div class="error-message" id="numErrorMessage"></div>
                                 </div>
                                 <div>
-                                    <input class="signInPass" type="password" placeholder="Mật khẩu">
+                                    <input class="signInPass" id="passwordInput" type="password" placeholder="Mật khẩu">
+                                    <div class="error-message" id="passwordErrorMessage"></div>
                                 </div>
 
-                                <a href="index.html" class="btn-login">Đăng nhập</a>
+                                <a class="btn-login" onclick="validateForm()">Đăng nhập</a>
                             </form>
                             <div class="forgetPw"><a href="">Quên mật khẩu</a></div>
                         </div>
                         <div class="login-footer">
                             <div class="login-footer-item">
                                 Bạn là người mới ?
-                                <a href="signup.html" class="login-footer-signUp">Tạo tài khoản</a>
+                                <a class="login-footer-signUp">Tạo tài khoản</a>
                             </div>
                         </div>
                     </div>  
@@ -134,5 +136,34 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+        function validateForm() {
+            let sdt = sdtInput.value.trim();
+            let password = passwordInput.value.trim();
+
+            let isValid = true;
+
+            if(!validateNumPhone(sdt)){
+                numErrorMessage.textContent = 'Vui lòng nhập số điện thoại của bạn.';
+            }
+            else
+                numErrorMessage.textContent = '';
+            if(password === ''){
+                passwordErrorMessage.textContent = 'Vui lòng nhập mật khẩu của bạn.';
+            }
+            else
+                passwordErrorMessage.textContent = '';
+
+        }
+
+        function validateNumPhone(sdt){
+            let regex = /^0[0-9]{9}$/;
+            return regex.test(sdt);
+        }
+
+
+    </script>
 </body>
 </html>

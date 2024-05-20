@@ -378,6 +378,7 @@ body{
     padding: 2px;
     width: 25px;
     height: 2px;
+    cursor: pointer;
     border: 1px solid #999;
 }
 
@@ -945,10 +946,16 @@ body{
 /* Media query cho máy tính bảng */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
 
+    .seemore{
+        display: none;
+    }
+
     .wrapper_container {
         margin: 0 auto;
         width: 100%;
         max-width: none;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .header_contain{
@@ -972,7 +979,7 @@ body{
     }
 
     /* css sidebar */
-
+/* 
     .content{
         display: block;
     }
@@ -993,8 +1000,6 @@ body{
         display: flex;
         background-color: #222123;
         padding-bottom: 0;
-        overflow: auto;
-        flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: center;
         margin: 0 auto;
@@ -1025,13 +1030,21 @@ body{
     }
 
     .sidebar_items{
-        display: flex;
-        flex-direction: column;
+        display: block;
         position: relative;
     }
 
+    .sidebar_items a:hover .sidebar_res {
+        background-color: #A10C28;
+        z-index: 99;
+        transform: translate(0);
+        scale: 1;
+        transition-delay: 0.1s;
+        box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+
     .sidebar_items span{
-        font-size: 25px;
+        font-size: 20px;
         padding: 0;
     }
 
@@ -1044,7 +1057,19 @@ body{
         margin-bottom: 10px;
     }
 
-    
+    .submenu {
+        width: 100%;
+        display: flex;
+        z-index: 99;
+        float: left;
+    }
+
+    .submenu_items {
+        padding: 20px;
+        padding-left: 0px;
+        text-align: center;
+        background-color: rgba(83, 83, 83, 0.7);
+    } */
     /* css slideshow */
 
     .container_right {
@@ -1075,7 +1100,6 @@ body{
         display: inline-block;
         box-sizing: border-box;
         padding: 20px 20px 0 20px;
-        margin: 0 auto;
     }
 
     .product_hover{
@@ -1095,7 +1119,7 @@ body{
 
     .prices , .dis_prices, .re_prices{
         font-weight: 800;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
         color: #A50C15;    
         align-items: center;
@@ -1106,7 +1130,7 @@ body{
     }
 
     .order button{
-        padding: 16px 12px;
+        padding: 12px 8px;
         line-height: 20px;
         font-size: 18px;
         font-weight: 700;
@@ -1137,6 +1161,10 @@ body{
         object-fit: cover;
     }
 
+    .marquee {
+        height: 700px;
+    }
+
     /* css news */
 
     .news {
@@ -1160,7 +1188,7 @@ body{
 
     .news_body-img{
         width: 100%;
-        height: 65%;
+        height: 55%;
     }
 
     .news_body-img img{
@@ -1176,7 +1204,7 @@ body{
         display: block;
         overflow: auto;
         width: 100%;
-        height: 35%;
+        height: 45%;
         font-size: 20px;
     }
 
@@ -1370,8 +1398,13 @@ body{
 /* Media query cho điện thoại thông minh */
 @media only screen and (max-width: 480px) {
 
+    .seemore{
+        display: none;
+    }
+
     .wrapper{
         min-width: 0;
+        overflow-x: hidden;
     }
 
     /* css header */

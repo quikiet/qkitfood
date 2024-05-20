@@ -34,15 +34,22 @@
                         <div class="login-container">
                             <form action="">
                                 <div>
-                                    <input class="signInUser" type="text" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                                    <input id="emailInput" class="signInUser" type="text" placeholder="Email">
+                                    <div class="error-message" id="emailErrorMessage"></div>
                                 </div>
                                 <div>
-                                    <input class="signInPass" type="password" placeholder="Tạo mật khẩu">
+                                    <input id="sdtInput" class="signInUser" type="text" placeholder="Số điện thoại">
+                                    <div class="error-message" id="numErrorMessage"></div>
                                 </div>
                                 <div>
-                                    <input class="signInPass" type="password" placeholder="Xác nhận lại mật khẩu">
+                                    <input id="passwordInput1" class="signInPass" type="password" placeholder="Tạo mật khẩu">
+                                    <div class="error-message" id="passErrorMessage"></div>
                                 </div>
-                                <a href="index.html" class="btn-login">Đăng ký</a>
+                                <div>
+                                    <input id="passwordInput2" class="signInPass" type="password" placeholder="Xác nhận lại mật khẩu">
+                                    <div class="error-message" id="agpassErrorMessage"></div>
+                                </div>
+                                <a  class="btn-login" onclick="validateForm()">Đăng ký</a>
                             </form>
                         </div>
                         <div class="login-footer">
@@ -151,5 +158,58 @@
 
         </div>
     </div>
+
+    <script>
+
+        function validateForm() {
+            let mail = emailInput.value.trim()
+            let sdt = sdtInput.value.trim();
+            let password1 = passwordInput1.value.trim();
+            let password2 = passwordInput2.value.trim();
+            let isValid = true;
+
+            if(!validateEmail(mail)){
+                emailErrorMessage.textContent = 'Vui lòng nhập email của bạn.';
+                isValid = false;
+            }
+            else{
+                numErrorMessage.textContent = '';
+            }
+
+            if(!validateNumPhone(sdt)){
+                numErrorMessage.textContent = 'Vui lòng nhập số điện thoại của bạn.';
+                isValid = false;
+            }
+            else
+                numErrorMessage.textContent = '';
+
+            if(password1 === ''){
+                passErrorMessage.textContent = 'Vui lòng nhập mật khẩu của bạn.';
+                isValid = false;
+            }
+            else
+                passErrorMessage.textContent = '';
+
+            if(password2 != password1 || password2 === ''){
+                agpassErrorMessage.textContent = 'Mật khẩu không trùng';
+                isValid = false;
+            }
+            else
+                agpassErrorMessage.textContent = '';
+
+        }
+
+        function validateEmail(mail){
+            let regex = /^\S+@\S+\.\S+$/;
+            return regex.test(mail);
+        }
+
+        function validateNumPhone(sdt){
+            let regex = /^0[0-9]{9}$/;
+            return regex.test(sdt);
+        }
+
+
+    </script>
 </body>
 </html>
