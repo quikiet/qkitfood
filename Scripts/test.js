@@ -108,3 +108,26 @@ document.getElementById('seeMoreButton').addEventListener('click', function(){
     });
 
 });
+
+document.querySelectorAll('.like').forEach(function(e){
+    e.addEventListener('click',function(){
+        this.classList.toggle('heartRed');
+        this.classList.toggle('heartWhite');
+    });
+});
+
+let btn = document.getElementById('pushToTop');
+    btn.addEventListener('click', function(){
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+window.onscroll = function(){
+    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+        btn.style.display = 'block';
+        btn.style.opacity = '1';
+    }
+    else{
+        btn.style.opacity = '0';
+        btn.style.display = 'none';
+    }
+}

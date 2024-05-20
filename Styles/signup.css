@@ -530,11 +530,11 @@
     }
 
     .signInUser {
-        margin: 0;
+        margin: 5px 0;
     }
 
     .signInPass {
-        margin: 0;
+        margin: 5px 0;
     }
 
     .error-message{

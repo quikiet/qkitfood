@@ -58,19 +58,26 @@
                                 </div>
                                 <div class="name_product">
                                     Bánh hamburger
+                                    <div class="rate">
+                                        <i class='bx bxs-star' style="color: #A21627;" ></i>
+                                        <i class='bx bxs-star' style="color: #A21627;" ></i>
+                                        <i class='bx bxs-star' style="color: #A21627;" ></i>
+                                        <i class='bx bxs-star' style="color: #A21627;" ></i>
+                                        <i class='bx bxs-star' style="color: #A21627;" ></i>
+                                    </div>
                                 </div>
                             </div>
                             <div class="price">
                                 <p class="price_old"><span>60.000 đ</span> <span style="color: #A21627;background-color: #E38F30;">[Giảm 23%]</span></p>
-                                <p class="price_sale">49.000 đ</p>
+                                <p class="price_sale">49.000 đ <i class='bx bxs-heart heartWhite' id="like" ></i></p>
                             </div>
                             <div class="actions">
                                 <div class="quantity__wrapper">
-                                    <button class="quantity_btn quantity_btn_minus">-</button>
-                                    <input type="number" class="quantity input_quantity" min="1" value="1">
-                                    <button class="quantity_btn quantity_btn_plus">+</button>
+                                    <button class="quantity_btn quantity_btn_minus" onclick="minus()">-</button>
+                                    <input type="number" class="quantity input_quantity" min="1" value="1" id="numInput">
+                                    <button class="quantity_btn quantity_btn_plus" onclick="plus()">+</button>
                                 </div>
-                                <button class="buy"> <i class='bx bx-cart-download cart'></i> Thêm vào giỏ</button>
+                                <button class="buy" id="btnBuy"> <i class='bx bx-cart-download cart'></i> Thêm vào giỏ</button>
                             </div>
                             <div class="product_details">
                                 <p style="color: #999;margin-bottom: 10px;">Chi tiết sản phẩm</p>
@@ -288,6 +295,20 @@
                 changeImgs.src = originalSrc;
             });
         });
+
+        document.getElementById('like').addEventListener('click',function(){
+            this.classList.toggle('heartRed');
+        });
+
+        let amount = document.getElementById('numInput');
+        function plus(){
+            amount.value = parseInt(amount.value) + 1;
+        }
+
+        function minus(){
+            if(amount.value > 0)
+                amount.value = parseInt(amount.value) - 1;
+        }
 
     </script>
 </body>
