@@ -147,11 +147,15 @@
 
             if(!validateNumPhone(sdt)){
                 numErrorMessage.textContent = 'Vui lòng nhập số điện thoại của bạn.';
+                isValid = false;
+                document.getElementById('sdtInput').style.borderBottom = "2px solid var(--red-color)";
             }
             else
                 numErrorMessage.textContent = '';
             if(password === ''){
+                isValid = false;
                 passwordErrorMessage.textContent = 'Vui lòng nhập mật khẩu của bạn.';
+                document.getElementById('passwordInput').style.borderBottom = "2px solid var(--red-color)";
             }
             else
                 passwordErrorMessage.textContent = '';

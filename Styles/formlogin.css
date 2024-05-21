@@ -116,6 +116,9 @@
 
 .login-container input{
     padding: 8px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
 }
 
 .error-message{
@@ -473,6 +476,7 @@
 
     .login {
         width: 100%;
+        opacity: 0.9;
         background-color: var(--red-color);
         border-radius: 4px;
         box-shadow: 0 3px 10px 0 rgba(0,0,0,.14);
@@ -481,6 +485,18 @@
         transition: 0.6s;
         padding: 10px;
         margin: 0;
+    }
+
+    .login-container input{
+        color: #f3f3f3;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: white;
+    }
+
+    .login-header{
+        color: var(--orange-color);
     }
 
     .btn-login{

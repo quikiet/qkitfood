@@ -21,6 +21,44 @@ body{
     width: 100%;
 }
 
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* background: var(--red-color); */
+    background-image: url(../Images/bg.png);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+#wrapper{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.spinner {
+    border: 14px solid var(--orange-color);
+    border-top: 14px solid var(--red-color);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
 .pushToTop{
     position: fixed;
     right: 0;

@@ -1,3 +1,14 @@
+window.addEventListener('load', function() {
+    const loading = document.getElementById('loading');
+    const content = document.getElementById('wrapper');
+    this.setTimeout(function(){
+        loading.classList.add('hidden');
+        content.style.opacity = '1';
+    },3000);
+});
+
+
+
 function open_menu(){
     document.getElementById('sidebar_container').style.display="block";
     document.getElementById('sidebar_container').style.opacity="1";

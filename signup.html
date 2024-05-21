@@ -170,6 +170,7 @@
 
             if(!validateEmail(mail)){
                 emailErrorMessage.textContent = 'Vui lòng nhập email của bạn.';
+                document.getElementById('emailInput').style.borderBottom = "2px solid var(--red-color)";
                 isValid = false;
             }
             else{
@@ -178,6 +179,7 @@
 
             if(!validateNumPhone(sdt)){
                 numErrorMessage.textContent = 'Vui lòng nhập số điện thoại của bạn.';
+                document.getElementById('sdtInput').style.borderBottom = "2px solid var(--red-color)";
                 isValid = false;
             }
             else
@@ -185,6 +187,7 @@
 
             if(password1 === ''){
                 passErrorMessage.textContent = 'Vui lòng nhập mật khẩu của bạn.';
+                document.getElementById('passwordInput1').style.borderBottom = "2px solid var(--red-color)";
                 isValid = false;
             }
             else
@@ -192,6 +195,7 @@
 
             if(password2 != password1 || password2 === ''){
                 agpassErrorMessage.textContent = 'Mật khẩu không trùng';
+                document.getElementById('passwordInput2').style.borderBottom = "2px solid var(--red-color)";
                 isValid = false;
             }
             else
