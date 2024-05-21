@@ -50,7 +50,7 @@ body{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    animation: spin 2s linear infinite;
+    animation: spin 3s linear infinite;
 }
 
 @keyframes spin {
@@ -446,6 +446,7 @@ body{
 .list_images img{
     width: 100%;
     object-fit: cover;
+    border-radius: 0 0 5px 0;
 }
 
 .btns{
@@ -546,6 +547,7 @@ body{
     width: 100%;
     height: 100%;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .like{
@@ -709,12 +711,13 @@ body{
     width: 100%;
     display: block;
     overflow: hidden;
-    height: 600px;
+    height: 500px;
     background-color: #1A441B;
 }
 
 .marquee_content{
     margin-top: 20px;
+    height: 70%;
     display: block;
     position: relative;    
     color: #ffffff;
@@ -1305,7 +1308,11 @@ body{
     }
 
     .marquee {
-        height: 700px;
+        height: 600px;
+    }
+
+    .marquee_content{
+        height: 35%; 
     }
 
     /* css news */
@@ -1672,6 +1679,10 @@ body{
         display: none;
     }
 
+    .list_images img{
+        border-radius: 0;
+    }
+
     /* css list product */
 
     .product_cards{
@@ -1775,6 +1786,7 @@ body{
         margin-top: 20px;
         display: block;
         position: relative;    
+        height: 50%;
     }
 
     .list_marquee li{
