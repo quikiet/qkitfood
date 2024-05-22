@@ -142,3 +142,27 @@ window.onscroll = function(){
         btn.style.display = 'none';
     }
 }
+
+
+
+
+document.getElementById('menu_btn').addEventListener('click',function(){
+        document.getElementById('sidebar').classList.remove('hidden');
+        document.getElementById('menu_btn').style.display = 'none';
+        document.getElementById('menu_tablet').style.width = '0';
+        document.getElementById('menu_tablet').style.height = '0';
+        document.getElementById('menu_tablet').style.marginTop = '0';
+
+})
+
+document.getElementById('close_btn').addEventListener('click',function(){
+    document.getElementById('sidebar').classList.add('hidden');
+    document.getElementById('sidebar').style.visibility = 'visible';
+    document.getElementById('menu_btn').style.display = 'block';
+    document.getElementById('menu_tablet').style.width = '100%';
+    document.getElementById('menu_tablet').style.height = '41px';
+    document.getElementById('menu_tablet').style.marginTop = '20px';
+    setTimeout(function(){
+        document.getElementById('menu_tablet').style.display = 'block'
+    },600);
+});
