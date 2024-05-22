@@ -29,7 +29,7 @@ function open_close(){
 
 $(document).ready(function(){
 $('#sub--menu').click(function(){
-        $(this).next('.submenu').slideToggle(1000);
+        $(this).next('.submenu').slideToggle();
         $(this).find('.bxs-down-arrow').toggleClass('rotate');
 });
 });

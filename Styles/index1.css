@@ -680,9 +680,10 @@ body{
 }
 
 .order:hover button{
-    /* background-color: rgba(29, 170, 158, 0.8); */
+    background-color: rgba(161, 12, 40, 1);
     cursor: pointer;
-    background-image: linear-gradient(to left, rgba(250, 246, 3, 0.9), rgba(250, 171, 0, 0.76));
+    color: var(--orange-color);
+    font-weight: bold;
 }
 
 .seemore{
