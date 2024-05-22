@@ -59,6 +59,20 @@ body{
     100% { transform: rotate(360deg); }
 }
 
+@media only screen and (min-width: 1025px) {
+    .menu_tablet{
+        display: none !important;
+    }
+    
+    .sidebar{
+        display: block !important;
+        visibility: visible !important;
+        transform: translateX(0) !important;
+    }
+}
+
+
+
 
 .pushToTop{
     position: fixed;
@@ -289,7 +303,7 @@ body{
 
 .menu_tablet{
     position: sticky;
-    top: 20px;
+    top: 120px;
     text-align: center;
     display: none;
     margin-top: 20px;
@@ -1146,6 +1160,12 @@ body{
         margin-right: 20px;
     }
 
+    .wrapper_header{
+        position: sticky;
+        top: 0;
+        z-index: 999999;
+    }
+
     /* css sidebar */
 
     
@@ -1161,7 +1181,7 @@ body{
         background-color: #222123;
         padding-bottom: 20px;
         position: sticky;
-        top:3px;
+        top:100px;
         transition: transform 0.6s ease;
         width: 100%;
         transform: translateX(0);

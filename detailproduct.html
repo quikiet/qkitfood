@@ -289,9 +289,12 @@
             const originalSrc = changeImgs.src;
             const hoverSrc = Element.getAttribute('data-img');
             Element.addEventListener("mouseover", function(){
-                changeImgs.src = hoverSrc;
+                timeout =setTimeout(function(){
+                    changeImgs.src = hoverSrc;
+                }, 200);
             });
             Element.addEventListener("mouseout", function(){
+                clearTimeout(timeout);
                 changeImgs.src = originalSrc;
             });
         });
