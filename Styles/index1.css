@@ -617,6 +617,10 @@ body{
     visibility: visible;
 }
 
+.content_product_img:hover .product_img{
+    filter: brightness(50%);
+}
+
 .product_hover{
     visibility: hidden;
     opacity: 0;
@@ -1295,6 +1299,17 @@ body{
 
         
     /* css list product */
+
+    .like {
+        right: 20px;
+        padding: 5px;
+        visibility: hidden;
+        cursor: pointer;
+        transition: color ease-in 0.3s;
+    }
+
+
+
 
     .container_content{
         display: flex;
@@ -2014,5 +2029,13 @@ body{
         display: block !important;
         visibility: visible !important;
         transform: translateX(0) !important;
+    }
+
+    .like {
+        right: 15px;
+        padding: 5px;
+        visibility: hidden;
+        cursor: pointer;
+        transition: color ease-in 0.3s;
     }
   }
