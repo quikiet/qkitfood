@@ -42,7 +42,7 @@ const slideShowImg = document.getElementsByClassName('slideshow_img');
 
 const btnLeft = document.querySelector('.btn_left');
 const btnRight = document.querySelector('.btn_right');
-// lấy pos
+
 let current = 0;
 
 const handleChangeSlide = () =>{
@@ -127,13 +127,15 @@ document.querySelectorAll('.like').forEach(function(e){
     });
 });
 
+
+
 let btn = document.getElementById('pushToTop');
     btn.addEventListener('click', function(){
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
 
 window.onscroll = function(){
-    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+    if(document.documentElement.scrollTop > 50){
         btn.style.display = 'block';
         btn.style.opacity = '1';
     }

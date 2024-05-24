@@ -90,7 +90,7 @@
 }
 
 .login{
-    width: 400px;
+    width: 360px;
     background-color: #FAF6EF;
     border-radius: 4px;
     box-shadow: 0 3px 10px 0 rgba(0,0,0,.14);
@@ -477,7 +477,8 @@
         align-items: center;
         align-self: center;
         /* background-color: #222123; */
-        background: url(../Images/bg2.png);
+        /* background: url(../Images/bg2.png); */
+        background: url(../Images/bg4.avif);
         /* background-color: var(--red-color); */
     }
 
@@ -518,7 +519,8 @@
         margin: 0;
         color: black;
         min-height: 100%;
-        width: fit-content; 
+        /* width: fit-content;  */
+        width: 100%;
     }   
 
     .login-header{
