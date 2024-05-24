@@ -1,0 +1,160 @@
+:root{
+    --red-color:#A10C28;
+    --orange-color:#F9DA24;
+    --green-color:#1A441B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000B4A;
+}
+
+
+.wrapper{
+    background-color: #AED3CF;
+    /* overflow-x: hidden; */
+    min-height: 100vh;
+    min-width: 1250px;
+}
+
+.wrapper_body{
+    width: 1200px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper_form{
+    width: 100%;
+    height: 650px;
+    background-color: #FEE1D4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.wrapper_form>div{
+    padding: 30px;
+}
+
+.form_img{
+    width: 400px;
+    height: 640px;
+}
+
+.form_img img{
+    border-radius: 0 100px 0 100px;
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+}
+
+.form_contact_input{
+    width: 650px;
+    height: 600px;
+}
+
+.contact_heading{
+    font-size: 85px;
+    padding-bottom: 20px;
+}
+
+.input_container{
+    display: flex;
+}
+
+.input_left{
+    width: 400px;
+    height: 100%;
+    padding-right: 60px;
+}
+
+.input_left label{
+    font-size: 20px;
+    display: block;
+    padding: 15px 0;
+}
+
+.input_left input{
+    width: 70%;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2.5px solid #000B4A;
+    padding: 5px;
+}
+
+textarea{
+    resize: none;
+    outline: none;
+    background-color: transparent;
+    border: 2.5px solid #000B4A;
+    padding: 5px;
+    border-radius: 8px;
+    width: 100%;
+    height: 100px
+}
+
+button{
+    padding: 15px 80px;
+    border-radius: 48px;
+    background-color: var(--red-color);
+    color: var(--orange-color);
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--orange-color);
+    color: var(--red-color);
+}
+
+.input_right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    justify-content: space-between;
+    padding: 35px 0;
+    padding-bottom: 0;
+}
+
+.right_contact h3, .basein h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.right_contact{
+    height: 60px;
+}
+
+.basein{
+    height: 75px;
+}
+
+span{
+    font-size: 18px;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 87px;
+    cursor: pointer;
+}
+
+.social a i{
+    font-size: 28px;
+}
