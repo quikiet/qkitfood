@@ -250,6 +250,7 @@ span{
         height: 100%;
         min-width: 0;
         width: 100%;
+        background-color: #FEE1D4;
         /* overflow-x: hidden; */
     }
 
