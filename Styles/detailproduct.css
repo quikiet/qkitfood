@@ -409,15 +409,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .similar_imgs{
-    width: 100%;
+    width: 280px;
     height: 250px;
-    padding: 10px 0;
+    overflow: hidden;
+}
+
+.similar_imgs:hover img{
+    transform: scale(1.1);
 }
 
 .similar_imgs img{
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    transition: all .6s ease;
 }
 
 .product_desc{
@@ -805,6 +809,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     .similar_imgs{
         width: 100%;
+        padding: 10px 0;
         height: 220px;
     }
 

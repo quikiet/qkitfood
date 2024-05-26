@@ -284,21 +284,21 @@
             })
         });
 
-        const similarImgs = document.querySelectorAll('.similar_imgs');
-        similarImgs.forEach((Element) =>{
-            const changeImgs = Element.querySelector('.change_imgs');
-            const originalSrc = changeImgs.src;
-            const hoverSrc = Element.getAttribute('data-img');
-            Element.addEventListener("mouseover", function(){
-                timeout =setTimeout(function(){
-                    changeImgs.src = hoverSrc;
-                }, 200);
-            });
-            Element.addEventListener("mouseout", function(){
-                clearTimeout(timeout);
-                changeImgs.src = originalSrc;
-            });
-        });
+        // const similarImgs = document.querySelectorAll('.similar_imgs');
+        // similarImgs.forEach((Element) =>{
+        //     const changeImgs = Element.querySelector('.change_imgs');
+        //     const originalSrc = changeImgs.src;
+        //     const hoverSrc = Element.getAttribute('data-img');
+        //     Element.addEventListener("mouseover", function(){
+        //         timeout =setTimeout(function(){
+        //             changeImgs.src = hoverSrc;
+        //         }, 200);
+        //     });
+        //     Element.addEventListener("mouseout", function(){
+        //         clearTimeout(timeout);
+        //         changeImgs.src = originalSrc;
+        //     });
+        // });
 
         document.getElementById('like').addEventListener('click',function(){
             this.classList.toggle('heartRed');
