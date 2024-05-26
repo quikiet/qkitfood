@@ -29,6 +29,12 @@ function open_close(){
 
 $(document).ready(function(){
 $('#sub--menu').click(function(){
+    // var sub = $(this).next('.submenu');
+    // if(sub.is(':visible')){
+    //     sub.slideUp();
+    // }
+    // else
+    //     sub.slideDown();
         $(this).next('.submenu').slideToggle();
         $(this).find('.bxs-down-arrow').toggleClass('rotate');
 });
