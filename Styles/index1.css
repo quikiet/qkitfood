@@ -2075,4 +2075,13 @@ html, body {
         cursor: pointer;
         transition: color ease-in 0.3s;
     }
+
+    .footer_payment .payment {
+        justify-content: center;
+    }
+
+    .footer_contact ul {
+        justify-content: center;
+    }
+
   }
