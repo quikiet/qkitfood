@@ -210,28 +210,21 @@ span{
 
     iframe{
         margin: auto;
-        height: 60%;
+        height: 100%;
     }
 
     .wrapper_body {
-        width: 100%;
-        min-height: 100vh;
-        height: 100%;
-        margin: auto;
+        display: block;
     }
 
     .wrapper_form {
         display: flex;
         justify-content: left;
+        height: 100%;
     }
 
     .wrapper_form>div{
         padding: 0;
-    }
-
-    .wrapper_form {
-        width: 95%;
-        height: 100%;
     }
 
     .form_img {
