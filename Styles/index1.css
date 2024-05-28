@@ -208,9 +208,12 @@ html, body {
     object-fit: cover;
 }
 
+.search{
+    width: 500px;
+}
+
 .form_search{
     background-color: #ffffff;
-    width: 100%;
     height: 100%;
     padding: 10px 30px 8px 10px;
     border-radius: 25px;
@@ -222,7 +225,7 @@ html, body {
     background-color: #ffffff;
     color: #000;
     border: none;
-    width: 500px;
+    width: 100%;
     position: relative;
 }
 
@@ -1370,11 +1373,6 @@ html, body {
         margin-right: 20px;
     }
 
-    .product_name h3{
-        font-weight: 700;
-        font-size: 25px;
-    }
-
     .product_actions{
         display: flex;
         justify-content: space-between;
@@ -1395,7 +1393,6 @@ html, body {
     .order button{
         padding: 12px 8px;
         line-height: 20px;
-        font-size: 18px;
         font-weight: 700;
         background-color: #ffffff;
         border: 1px solid #1DAA9F;
@@ -1985,6 +1982,7 @@ html, body {
     }
 
     .footer_container>div{
+        text-align: center;
         margin-left: 0;
     }
 

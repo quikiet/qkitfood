@@ -178,7 +178,7 @@ span{
     font-size: 28px;
 }
 
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
 
     .wrapper {
         min-height: 100vh;
@@ -238,7 +238,7 @@ span{
     }
     
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 576px) {
 
     *{
         font-size: 20px;
