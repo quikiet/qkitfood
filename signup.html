@@ -174,7 +174,8 @@
                 isValid = false;
             }
             else{
-                numErrorMessage.textContent = '';
+                document.getElementById('sdtInput').style.borderBottom = "";
+                emailErrorMessage.textContent = '';
             }
 
             if(!validateNumPhone(sdt)){
@@ -183,7 +184,10 @@
                 isValid = false;
             }
             else
+            {
                 numErrorMessage.textContent = '';
+                document.getElementById('sdtInput').style.borderBottom = ""
+            }
 
             if(password1 === ''){
                 passErrorMessage.textContent = 'Vui lòng nhập mật khẩu của bạn.';
@@ -191,7 +195,10 @@
                 isValid = false;
             }
             else
+            {
+                document.getElementById('sdtInput').style.borderBottom = "";
                 passErrorMessage.textContent = '';
+            }
 
             if(password2 != password1 || password2 === ''){
                 agpassErrorMessage.textContent = 'Mật khẩu không trùng';
@@ -199,7 +206,14 @@
                 isValid = false;
             }
             else
+            {
+                document.getElementById('sdtInput').style.borderBottom = "";
                 agpassErrorMessage.textContent = '';
+            }
+
+            if (isValid) {
+                alert('Đăng kí thành công')
+            }
 
         }
 

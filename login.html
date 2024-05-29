@@ -151,15 +151,24 @@
                 document.getElementById('sdtInput').style.borderBottom = "2px solid var(--red-color)";
             }
             else
+            {
                 numErrorMessage.textContent = '';
+                document.getElementById('sdtInput').style.borderBottom = "";
+            }
             if(password === ''){
                 isValid = false;
                 passwordErrorMessage.textContent = 'Vui lòng nhập mật khẩu của bạn.';
                 document.getElementById('passwordInput').style.borderBottom = "2px solid var(--red-color)";
             }
             else
+            {
                 passwordErrorMessage.textContent = '';
+                document.getElementById('sdtInput').style.borderBottom = "";
+            }
 
+            if (isValid) {
+            window.location.href = 'index.html';
+            }
         }
 
         function validateNumPhone(sdt){
